@@ -1,4 +1,5 @@
 def getBondPrice_E(face, couponRate, m, yc):
+    assert len(yc) == m
     cf = face * couponRate
     pv = 0
 
@@ -8,10 +9,10 @@ def getBondPrice_E(face, couponRate, m, yc):
         else:
             cashflow = cf + face
 
-        discount = 1.0
+        discount = 1
         for k in range(i):
             discount = (1 + yc[k]) ** i
-        discount = 1.0 / discount
+        discount = 1 / discount
 
         pv += cashflow * discount
     
