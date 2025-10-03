@@ -1,4 +1,4 @@
-def getBondPrice_E(face, couponRate, m, yc):
+def getBondPrice_E(face, couponRate, yc，m=5):
     cf = face * couponRate 
     pv = 0
     
