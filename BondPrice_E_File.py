@@ -10,4 +10,4 @@ def getBondPrice_E(face, couponRate, m, yc):
         
         pv += cashflow * discount_factor
     
-    return (pv)
+    return float(pv)
