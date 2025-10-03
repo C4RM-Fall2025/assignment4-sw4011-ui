@@ -1,4 +1,5 @@
-def getBondPrice_E(face, couponRate, yc，m=5):
+def getBondPrice_E(face, couponRate, yc):
+    m = len(yc)
     cf = face * couponRate 
     pv = 0
     
